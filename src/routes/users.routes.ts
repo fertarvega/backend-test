@@ -5,18 +5,18 @@ import {
   getUserById,
   getUsers,
   updateUser,
-} from "../controllers/users.controllers";
+} from "../controllers/users.controller";
 
 const router = Router();
 
-router.get("/users", getUsers);
+router.get("/", getUsers);
 
-router.get("/users/:id", getUserById);
+router.get("/:id", getUserById);
 
-router.post("/users", createUser);
+router.post("/", createUser);
 
-router.put("/users/:id", updateUser);
+router.put("/:id", updateUser);
 
-router.delete("/users/:id", deleteUser);
+router.delete("/:id", deleteUser);
 
 export default router;
