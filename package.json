@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "prisma migrate dev && tsx prisma/seed.ts && nodemon src/server.ts",
     "dev": "nodemon src/server.ts",
-    "prisma-seed": "tsx prisma/seed.ts"
+    "prisma-seed": "tsx prisma/seed.ts",
+    "prisma-reset": "prisma migrate reset"
   },
   "keywords": [],
   "license": "ISC",
