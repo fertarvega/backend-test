@@ -15,7 +15,7 @@ model User {
   country   String
   age       Int
   gender    String
-  phone     Int      @unique
+  phone     String   @unique
   companyId String
   company   Company  @relation(fields: [companyId], references: [id])
   createdAt DateTime @default(now())

@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/server.ts"
+    "dev": "nodemon src/server.ts",
+    "prisma-seed": "tsx prisma/seed.ts"
   },
   "keywords": [],
   "license": "ISC",
@@ -12,11 +13,12 @@
     "@types/node": "^24.3.2",
     "nodemon": "^3.1.10",
     "prisma": "^6.16.1",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.20.5",
     "typescript": "^5.9.2"
   },
   "dependencies": {
     "@prisma/client": "^6.16.1",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "ts-node": "^10.9.2"
   }
 }
