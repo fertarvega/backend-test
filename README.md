@@ -2,6 +2,11 @@
 
 Este proyecto es un backend en Node.js con Express y Prisma, usando una base de datos PostgreSQL. Este proyecto es parte de una prueba técnica.
 
+## Requisitos
+
+- Node.js 22
+- npm
+
 ## Comandos disponibles
 
 - `npm run start`: Ejecuta las migraciones, siembra la base de datos y levanta el servidor en modo desarrollo.
@@ -51,9 +56,13 @@ Este proyecto es un backend en Node.js con Express y Prisma, usando una base de 
 5. **Correr el proyecto:**
 
    - Para iniciar todo por primera vez (migraciones, semilla y servidor):
+
+     - Nota: Al correr este comando por primera vez, pedirá el nombre de la migración, en mi caso le pongo `base`, es para crear la migración de PrismaJS a PostgreSQL.
+
      ```bash
      npm run start
      ```
+
    - Para desarrollo (solo servidor con hot reload):
      ```bash
      npm run dev
