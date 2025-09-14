@@ -6,6 +6,7 @@ Este proyecto es un backend en Node.js con Express y Prisma, usando una base de 
 
 - Node.js 22
 - npm
+- Descargar y correr backend: https://github.com/fertarvega/frontend-test
 
 ## Comandos disponibles
 
